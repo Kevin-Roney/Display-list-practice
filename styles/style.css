@@ -92,8 +92,15 @@ footer {
 
 .dogs {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     border: 1px;
     border-color: black;
+}
+.squirrels {
+    display: flex;
+    flex-wrap: wrap;
+}
+.squirrels img {
+    width: 400px;
 }
