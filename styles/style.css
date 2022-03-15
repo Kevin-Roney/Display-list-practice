@@ -34,15 +34,12 @@ section {
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    
 }
 
 header {
@@ -81,7 +78,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -92,22 +89,25 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+.dogs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px;
+    border-color: black;
+    box-shadow: 10px 5px 5px orange;
+}
+.squirrels {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px red;
+}
+.squirrels img {
+    width: 400px;
+}
+.diet {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px pink;
+}
