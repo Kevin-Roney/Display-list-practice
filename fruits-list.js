@@ -1,7 +1,7 @@
 export const fruits = [
     'banana',
-    'apple',
-    'starfruit',
-    'orang',
-    'pear',
+    ' apple',
+    ' starfruit',
+    ' orange',
+    ' pear',
 ];
