@@ -5,6 +5,8 @@ import { renderDogsEl } from './render-dogs.js';
 import { dogsList } from './dogs-list.js';
 import { squirrelsTypes } from './squirrels-list.js';
 import { renderSquirrelEl } from './render-squirrels.js';
+import { squirrelsDietFunc } from './render-diet.js';
+import { squirrelsDiet } from './squirrel-diet.js';
 // initialize global state
 
 
@@ -24,6 +26,13 @@ const squirrelsListEl = document.querySelector('.squirrels');
 for (let squirrel of squirrelsTypes) {
     const SquirrEl = renderSquirrelEl(squirrel);
     squirrelsListEl.append(SquirrEl);
+}
+
+const squirrelDietoEl = document.querySelector('.diet');
+
+for (let dietsq of squirrelsDiet) {
+    const dietLite = squirrelsDietFunc(dietsq);
+    squirrelDietoEl.append(dietLite);
 }
 // set event listeners 
   // get user input
