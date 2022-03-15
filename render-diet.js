@@ -11,4 +11,6 @@ export function squirrelsDietFunc(dietObj) {
         sqDietEl.textContent = sqdiet;
         dietEl.append(sqDietEl);
     }
+    dietTypeEl.append(squirrelDietEl, dietEl);
+    return dietTypeEl;
 }
